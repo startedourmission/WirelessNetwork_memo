@@ -1,6 +1,6 @@
 # INHATC_2023_2_WirelessNetwork
 
-### 라즈베리파이 초기 설정
+## 라즈베리파이 초기 설정
 
 ```bash
 sudo apt update
