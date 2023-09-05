@@ -2,14 +2,15 @@
 
 ### 라즈베리파이 초기 설정
 
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
 * 한글 깨짐
 
-'''bash
-
+```bash
 sudo apt-get install fonts-unfonts-core -y
-
 sudo apt-get install ibus ibus-hangul -y
-
 sudo reboot
-
-'''
+```
