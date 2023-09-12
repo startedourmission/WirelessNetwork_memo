@@ -24,6 +24,7 @@ sudo reboot
 #### 인체감지센서 Python 코드 :  [[pir.py]]
 
 #### InfluxDB2
+#Infuxdb2 
 
 - InfluxDB download key using wget
 
@@ -58,6 +59,11 @@ sudo service influxdb start
 sudo service influxdb status
 ```
 
+- InfluxDB Python Library
+
+```Shell
+sudo pip3 install influxdb
+```
 ### InfluxDB2 web setting
 
 - localhost:8086 접속
@@ -73,8 +79,37 @@ sudo service influxdb status
 
 [![](https://raw.githubusercontent.com/sonnonet/2023_inhatc/main/capture/influxdb_2.png)](https://github.com/sonnonet/2023_inhatc/blob/main/capture/influxdb_2.png)
 
+### Grafana Installation
+#grafana 
+
+1. Repository의 GPG key를 더하기
+
+```
+wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+```
+
+2. Repository를 더하기
+
+```
+echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+```
+
+3. 프로그램 설치
+
+```
+sudo apt update
+sudo apt install grafana
+```
+
+4. 프로그램 실행
+
+```
+sudo service grafana-server start
+```
+
 
 ## 아두이노
+#아두이노 
 
 #### 센서 및 주변기기 종류
 
