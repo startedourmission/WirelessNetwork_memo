@@ -1,4 +1,4 @@
-# INHATC_2023_2_WirelessNetwor
+# INHATC_2023_2_WirelessNetwork
 
 인하공업전문대학 2023년도 2학기 무선네트워크 수업 
 
@@ -23,12 +23,17 @@ sudo reboot
 
 #### 인체감지센서
 
-```Python
-import 
 
+- 코드 [[pir.py]]
+
+#### InfluxDB2
+
+```Shell
+sudo service influxdb status
 ```
 
-#### 
+Loaded : loaded인지 확인
+
 
 ## 아두이노
 
@@ -36,11 +41,3 @@ import
 
 	아두이노 센서는 주로 3.3V or 5V 사용한다. 5V 센서는 3.3V에 꽂아도 되지만 그 반대는 센서가 탈 수 있음
 	아두이노 기준으로, 디지털 신호는 송수신 모두 가능하지만, 아날로그 신호는 수신만 가능
-
-
-- PCB
-
-조도센서 등 아날로그 데이터를 디지털 신호로 바꿀 수 있음
-
-- [[인체감지센서]]
-
