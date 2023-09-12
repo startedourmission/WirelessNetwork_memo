@@ -21,18 +21,57 @@ sudo apt-get install ibus ibus-hangul -y
 sudo reboot
 ```
 
-#### 인체감지센서
-
-
-- 코드 [[pir.py]]
+#### 인체감지센서 Python 코드 :  [[pir.py]]
 
 #### InfluxDB2
 
-```Shell
+- InfluxDB download key using wget
+
+```
+wget -q https://repos.influxdata.com/influxdata-archive_compat.key
+echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdata-archive_compat.key' | sha256sum -c && cat influxdata-archive_compat.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg > /dev/null
+echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
+```
+
+- Packages are up to date && install Influxdb2
+
+```
+sudo apt-get update && sudo apt-get install influxdb2 -y
+```
+
+- 에러) influxdb2 패키지 찾을수 없습니다.
+    - influxdb 1으로 설치
+
+```
+sudo apt-get install influxdb -y
+```
+
+- InfluxDB as a background service on startup
+
+```
+sudo service influxdb start
+```
+
+- InfluxDB is status (service)
+
+```
 sudo service influxdb status
 ```
 
-Loaded : loaded인지 확인
+### InfluxDB2 web setting
+
+- localhost:8086 접속
+- GET STARTED
+
+[![](https://raw.githubusercontent.com/sonnonet/2023_inhatc/main/capture/influxdb_1.png)](https://github.com/sonnonet/2023_inhatc/blob/main/capture/influxdb_1.png)
+
+- Setup Initial User
+- (pi , raspberry)
+- Organization Name (study)
+- Bucket Name (DatabaseName)
+    - test
+
+[![](https://raw.githubusercontent.com/sonnonet/2023_inhatc/main/capture/influxdb_2.png)](https://github.com/sonnonet/2023_inhatc/blob/main/capture/influxdb_2.png)
 
 
 ## 아두이노
