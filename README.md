@@ -23,7 +23,7 @@ sudo reboot
 
 #### 인체감지센서 Python 코드 :  [[pir.py]]
 
-#### InfluxDB2
+#### InfluxDB2 
 #Infuxdb2 
 
 - InfluxDB download key using wget
@@ -40,7 +40,7 @@ echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https
 sudo apt-get update && sudo apt-get install influxdb2 -y
 ```
 
-- 에러) influxdb2 패키지 찾을수 없습니다.
+- error) influxdb2 패키지 찾을수 없습니다.
     - influxdb 1으로 설치
 
 ```
