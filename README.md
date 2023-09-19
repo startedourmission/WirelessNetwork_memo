@@ -21,10 +21,9 @@ sudo apt-get install ibus ibus-hangul -y
 sudo reboot
 ```
 
-#### 인체감지센서 Python 코드 :  [[pir.py]]
+인체감지센서 Python 코드 :  pir.py
 
 #### InfluxDB2 
-#Infuxdb2 
 
 - InfluxDB download key using wget
 
@@ -80,7 +79,6 @@ sudo pip3 install influxdb
 [![](https://raw.githubusercontent.com/sonnonet/2023_inhatc/main/capture/influxdb_2.png)](https://github.com/sonnonet/2023_inhatc/blob/main/capture/influxdb_2.png)
 
 ### Grafana Installation
-#grafana 
 
 1. Repository의 GPG key를 더하기
 
@@ -109,7 +107,6 @@ sudo service grafana-server start
 
 
 ## 아두이노
-#아두이노 
 
 #### 센서 및 주변기기 종류
 
