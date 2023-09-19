@@ -21,7 +21,10 @@ sudo apt-get install ibus ibus-hangul -y
 sudo reboot
 ```
 
-인체감지센서 Python 코드 :  pir.py
+- 네트워크 설정
+```Shell
+sudo vim /etc/dhcpcd.conf
+```
 
 #### InfluxDB2 
 
@@ -29,7 +32,9 @@ sudo reboot
 
 ```
 wget -q https://repos.influxdata.com/influxdata-archive_compat.key
+
 echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdata-archive_compat.key' | sha256sum -c && cat influxdata-archive_compat.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg > /dev/null
+
 echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
 ```
 
@@ -105,10 +110,32 @@ sudo apt install grafana
 sudo service grafana-server start
 ```
 
-
 ## 아두이노
-
-#### 센서 및 주변기기 종류
 
 아두이노 센서는 주로 3.3V or 5V 사용한다. 5V 센서는 3.3V에 꽂아도 되지만 그 반대는 센서가 탈 수 있음
 아두이노 기준으로, 디지털 신호는 송수신 모두 가능하지만, 아날로그 신호는 수신만 가능
+
+
+## 센서
+
+#### 인체감지센서 
+
+Python 코드 :  pir.py
+
+#### 미세먼지 센서 
+
+센서에 있는 구멍을 이용해 미세먼지 투과율을 측정 , 적외선 LED 작동
+미세먼지 수치를 아날로그 데이터 전압(0 ~ 1023)값으로 표현
+
+> 아날로그 핀 값 x 5.0 / 1023.0  
+> 
+
+- VCC - 5V
+- 아두이노의 디지털 핀에  LED 입력
+- 센서의 out - 아두이노 A0
+
+
+
+
+
+
