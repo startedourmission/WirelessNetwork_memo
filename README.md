@@ -140,7 +140,7 @@ Python 코드 :  pir.py
 sudo raspi-config
 ```
 
-System Option > Legacy Camera enable 선택
+Interface Option > Legacy Camera enable 선택
 
 Legacy Camera enable
 
