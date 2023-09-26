@@ -110,6 +110,8 @@ sudo apt install grafana
 sudo service grafana-server start
 ```
 
+localhot 또는 라즈베리파이의 ip :3000
+
 ## 아두이노 기기 & 센서
 
 아두이노 센서는 주로 3.3V or 5V 사용한다. 5V 센서는 3.3V에 꽂아도 되지만 그 반대는 센서가 탈 수 있음
