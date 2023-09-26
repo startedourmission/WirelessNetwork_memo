@@ -166,11 +166,26 @@ libcamera-still -o 파일명.jpg
 - 텔레그램 챗봇으로 전송
 
 ![[Pasted image 20230926154859.png]]
+job.context > job.chat_id로 변경
+async / await 사용
 
-- Picamera2 로 변경,,
+- Picamera2 로 변경
+
 ```Python
 from picamera2 import Picamera2, Preview
 
+picam = Picamera2()
+
+config = picam.create_preview_configuration()
+picam.confihure(config)
+
+picam.start_preview(Preview.QTGL)
+
+picam.start()
+time.sleep(2)
+picam.capture_file(“image.jpg”)
+
+picam.close()
 
 ```
 
