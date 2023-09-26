@@ -141,27 +141,38 @@ Python 코드 :  pir.py
 
 #### 카메라
 
-기본 설정
+- 기본 설정
 ```Shell
 sudo raspi-config
 ```
 
 Interface Option > Legacy Camera enable 선택
 
-Legacy Camera enable
+- Legacy Camera enable
 
 ```Shell
 raspistill -o 파일명.jpg -t 1000 # 1초 뒤 촬영
 raspistill -o 파일명.jpg -vf -vh # 수평, 수직 반전 
 ```
 
-Legacy Camera disable
+- Legacy Camera disable
 
 ```Shell
 libcamera-still -o 파일명.jpg
 ```
 
 
+
+- 텔레그램 챗봇으로 전송
+
+![[Pasted image 20230926154859.png]]
+
+- Picamera2 로 변경,,
+```Python
+from picamera2 import Picamera2, Preview
+
+
+```
 
 
 
