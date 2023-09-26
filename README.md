@@ -133,6 +133,29 @@ Python 코드 :  pir.py
 - 아두이노의 디지털 핀에  LED 입력
 - 센서의 out - 아두이노 A0
 
+#### 카메라
+
+기본 설정
+```Shell
+sudo raspi-config
+```
+
+System Option > Legacy Camera enable 선택
+
+Legacy Camera enable
+
+```Shell
+raspistill -o 파일명.jpg -t 1000 # 1초 뒤 촬영
+raspistill -o 파일명.jpg -vf -vh # 수평, 수직 반전 
+```
+
+Legacy Camera disable
+
+```Shell
+libcamera-still -o 파일명.jpg
+```
+
+
 
 
 
