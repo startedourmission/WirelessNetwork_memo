@@ -7,10 +7,6 @@
 > 2023.10.10
 > 중간 실습 평가 다 봄. influxdb까지만 하고 grafana 시각화는 안함.
 
-
-
-
-
 ## 라즈베리파이
 
 #### 초기 설정
@@ -52,6 +48,8 @@ echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdat
 
 echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
 ```
+	위 작업을 안하면 apt로 설치를 해도 정상적인 실행이 안됨.
+
 
 - Packages are up to date && install Influxdb2
 
