@@ -85,17 +85,11 @@ sudo pip3 install influxdb
 
 - localhost:8086 접속
 - GET STARTED
-
-[![](https://raw.githubusercontent.com/sonnonet/2023_inhatc/main/capture/influxdb_1.png)](https://github.com/sonnonet/2023_inhatc/blob/main/capture/influxdb_1.png)
-
 - Setup Initial User
 - (pi , raspberry)
 - Organization Name (study)
 - Bucket Name (DatabaseName)
     - test
-
-[![](https://raw.githubusercontent.com/sonnonet/2023_inhatc/main/capture/influxdb_2.png)](https://github.com/sonnonet/2023_inhatc/blob/main/capture/influxdb_2.png)
-
 ### Grafana Installation
 
 1. Repository의 GPG key를 더하기
