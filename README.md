@@ -137,7 +137,7 @@ Python 코드 :  pir.py
 > dustDestiny = (Voltage - 0.3) / 0.005
 
 - VCC - 5V
-- 아두이노의 디지털 핀에  LED 입력
+-  아두이노의 디지털 핀에  LED 입력
 - 센서의 out - 아두이노 A0
 
 #### 카메라
