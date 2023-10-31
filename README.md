@@ -188,6 +188,14 @@ picam.close()
 
 ```
 
+# Arduino Firmata
+
+baurdrate 57600
+
+Python 코드로 아두이노를 제어할 수 있는 라이브러리
+
+
+
 
 
 
